@@ -1,0 +1,34 @@
+# 环境变量文件
+.env
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Excel 临时文件
+~$*.xlsx
+~$*.xls
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 编译产物
+dist/
+build/
+*.spec
