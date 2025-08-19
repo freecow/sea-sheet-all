@@ -1,0 +1,106 @@
+{
+  "date_version": "20241101",
+  "seatable_config": {
+    "server_url": "${SEATABLE_SERVER_URL}",
+    "api_token": "${SEATABLE_API_TOKEN_MEMO}"
+  },
+  "excel_directories": {
+    "base_dir": "/Users/zhanghui/nutstore/WorkSync/2025目标跟踪/底表",
+    "report_dir": "/Users/zhanghui/nutstore/WorkSync/2025目标跟踪/报告",
+    "temp_dir": "/Users/zhanghui/nutstore/WorkSync/2025目标跟踪/临时"
+  },
+  "entries": [
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "A1&A2-2025新签合同同期-底表",
+      "excel_directory": "base_dir",
+      "excel_file_name": "A1&A2-2025新签合同-底表.xlsx",
+      "sheet_name": "A1&A2-2025新签合同-底表",
+      "sum_columns": ["合同金额", "自有软件额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "A1-2024新签合同同期-底表参考",
+      "excel_directory": "base_dir",
+      "excel_file_name": "A1-2024新签合同同期-底表.xlsx",
+      "sheet_name": "A1-2024新签合同同期-底表",
+      "sum_columns": ["合同金额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "A1-2023新签合同同期-底表参考",
+      "excel_directory": "base_dir",
+      "excel_file_name": "A1-2023新签合同同期-底表.xlsx",
+      "sheet_name": "A1-2023新签合同同期-底表",
+      "sum_columns": ["合同金额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "A3-交付人效统计-底表",
+      "excel_directory": "base_dir",
+      "excel_file_name": "A3-交付人效统计-底表.xlsx",
+      "sheet_name": "A3-交付人效统计-底表",
+      "sum_columns": ["合同金额", "当前验收总额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-自有软件",
+      "view_name": "A4-研发人效统计-底表",
+      "excel_directory": "report_dir",
+      "excel_file_name": "A4-研发人效统计-底表.xlsx",
+      "sheet_name": "A4-研发人效统计-底表",
+      "sum_columns": ["合同金额", "软件金额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "A5-2025全验收-底表",
+      "excel_directory": "base_dir",
+      "excel_file_name": "A5-2025全验收-底表.xlsx",
+      "sheet_name": "A5-2025全验收-底表",
+      "sum_columns": ["合同金额", "当前验收总额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "F1-2025技术部门已验收-底表",
+      "excel_directory": "base_dir",
+      "excel_file_name": "F1-2025技术部门已验收-底表.xlsx",
+      "sheet_name": "F1-2025技术部门已验收-底表",
+      "sum_columns": ["合同金额", "当前验收总额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "F1-技术部门已确未验-底表",
+      "excel_directory": "base_dir",
+      "excel_file_name": "F1-技术部门已确未验-底表.xlsx",
+      "sheet_name": "F1-技术部门已确未验-底表",
+      "sum_columns": ["合同金额", "当前在建总额"],
+      "field_mapping": "all"
+    },
+    {
+      "table_name": "PMS-确认收入",
+      "view_name": "F1-技术部门在建-底表",
+      "excel_directory": "base_dir",
+      "excel_file_name": "F1-技术部门在建-底表.xlsx",
+      "sheet_name": "F1-技术部门在建-底表",
+      "sum_columns": ["合同金额", "当前在建总额"],
+      "field_mapping": "all"
+    }
+  ],
+  "combined_files": [
+    {
+      "output_directory": "base_dir",
+      "output_file_name": "F1-2025年项目验收情况汇总-底表.xlsx",
+      "include_entries": [
+        "F1-2025技术部门已验收-底表.xlsx",
+        "F1-技术部门已确未验-底表.xlsx",
+        "F1-技术部门在建-底表.xlsx"
+      ]
+    }
+  ]
+}

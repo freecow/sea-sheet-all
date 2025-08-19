@@ -1,0 +1,44 @@
+{
+  "date_version": "20250804",
+  "seatable_config": {
+    "server_url": "${SEATABLE_SERVER_URL}",
+    "api_token": "${SEATABLE_API_TOKEN_REWARD}"
+  },
+  "excel_directories": {
+    "base_dir": "/Users/zhanghui/nutstore/WorkSync/2025奖励核算/奖励导出",
+    "report_dir": "/Users/zhanghui/nutstore/WorkSync/2025奖励核算/报告",
+    "temp_dir": "/Users/zhanghui/nutstore/WorkSync/2025奖励核算/临时"
+  },
+  "entries": [
+    {
+      "table_name": "项目考核明细表",
+      "view_name": "审核视图",
+      "excel_directory": "base_dir",
+      "excel_file_name": "项目奖励考核明细表.xlsx",
+      "sheet_name": "项目奖励",
+      "sum_columns": ["项目奖励额", "项目实发奖励"],
+      "field_mapping": {
+        "合同编号": "合同编号",
+        "项目名称": "项目名称",
+        "销售负责人": "销售负责人",
+        "有效合同额": "有效合同额",
+        "部门": "部门",
+        "部门奖励基数S1": "部门奖励基数",
+        "项目类型": "项目类型",
+        "奖励比例S2": "奖励比例",
+        "项目奖励额S3=S1×S2": "项目奖励额",
+        "本阶段得分S4=S5+S6+S7": "本阶段得分",
+        "项目实发奖励S9=S3×S10×S4/100": "项目实发奖励"
+      }
+    },
+    {
+      "table_name": "超长逾期考核",
+      "view_name": "审核视图",
+      "excel_directory": "base_dir",
+      "excel_file_name": "超长逾期.xlsx",
+      "sheet_name": "超长逾期",
+      "sum_columns": ["审定处罚额"],
+      "field_mapping": "all"
+    }
+  ]
+}
