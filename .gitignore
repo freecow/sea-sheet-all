@@ -1,6 +1,10 @@
 # 环境变量文件
 .env
 
+# 业务配置文件
+memo*.json
+reward*.json
+
 # Python 缓存文件
 __pycache__/
 *.py[cod]

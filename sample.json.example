@@ -1,0 +1,33 @@
+{
+  "date_version": "YYYYMMDD",
+  "seatable_config": {
+    "server_url": "${SEATABLE_SERVER_URL}",
+    "api_token": "${SEATABLE_API_TOKEN}"
+  },
+  "excel_directories": {
+    "base_dir": "/path/to/base/directory",
+    "report_dir": "/path/to/report/directory", 
+    "temp_dir": "/path/to/temp/directory"
+  },
+  "entries": [
+    {
+      "table_name": "example_table_name",
+      "view_name": "example_view_name",
+      "excel_directory": "base_dir",
+      "excel_file_name": "example_file.xlsx",
+      "sheet_name": "example_sheet",
+      "sum_columns": ["column1", "column2"],
+      "field_mapping": "all"
+    }
+  ],
+  "combined_files": [
+    {
+      "output_directory": "base_dir",
+      "output_file_name": "example_combined_output.xlsx",
+      "include_entries": [
+        "example_file1.xlsx",
+        "example_file2.xlsx"
+      ]
+    }
+  ]
+}
